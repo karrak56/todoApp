@@ -1,0 +1,25 @@
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.329);
+    transition: 0.1s;
+    z-index: 9999;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.visibleNote {
+    display: inline-block;
+}
+
+.slider {
+    animation: slide 10s infinite 1s;
+}
+
+@keyframes slide {
+	0% {transform:translateX(-50%);}
+	100% {transform:translateX(150%);}
+}
